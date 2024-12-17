@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn-System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container w-50 m-auto text-center my-5 py-5" id="login-container">
+        <h2 class="text-info"> Smart Login System </h2>
+        <form id="login-form" class="p-4">
+            <input class="form-control bg-transparent my-3 " type="text" id="username" placeholder="Enter your Email"
+                required>
+            <input class="form-control bg-transparent my-3" type="password" id="password"
+                placeholder="Enter your password" required>
+            <button class="btn btn-outline-info w-100 my-3">Login</button>
+        </form>
+        <p class="text-white">Don’t have an account? <a href="#" class="text-white " id="register-link">Sign Up</a></p>
+    </div>
+
+    <div class="container w-50 text-center m-auto my-5 py-5" id="register-container" style="display: none;">
+        <h2 class="text-info my-3">Smart Login System</h2>
+        <form id="register-form">
+            <input class="form-control bg-transparent my-3" type="text" id="Name" placeholder="Name" required>
+            <input class="form-control bg-transparent my-3" type="text" id="new-username" placeholder="New-username"
+                required>
+            <input class="form-control bg-transparent my-3" type="password" id="new-password" placeholder="New-password"
+                required>
+            <button class="btn btn-outline-info w-100 my-3">Login</button>
+        </form>
+        <p class="text-white">You have an account? <a href="#" class="text-white " id="login-link">Signin</a></p>
+    </div>
+
+    <div class="container text-white w-75 text-center m-auto my-5 py-5" id="welcome-container" style="display: none;">
+        <h2>Welcome</h2>
+        <p id="welcome-message"></p>
+
+        <button class="btn btn-outline-info w-25 my-3">Login</button>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
